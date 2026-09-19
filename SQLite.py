@@ -15,8 +15,8 @@ if uploaded_file is not None:
     # 1. Read uploaded Excel file
     df = pd.read_excel(uploaded_file)
 
-    st.write("Uploaded data:")
-    st.dataframe(df.head())
+    #st.write("Uploaded data:")
+    #st.dataframe(df.head())
 
     # 2. Create temporary SQLite database
     conn = sqlite3.connect(":memory:")
